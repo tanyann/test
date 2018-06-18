@@ -1,0 +1,17 @@
+<div>
+  <div class="cards">
+    <div class="card__item" v-for="item in filteredData">
+      <div class="card-photo">
+        <img v-bind:src="'./static/assets/image-'+item.id+'.png'" alt="" class="card-photo__img">
+        <div class="card-photo__city" v-html="city[item.city-1].name"></div>
+      </div>
+      <div class="card-info">
+        <div class="card-info__title" v-html="item.name"></div>
+        <div class="card-info-bottom">
+          <div class="card-info__category" v-html="category[item.category-1].name"></div>
+          <div class="card-info__price" v-html="'$'+item.price"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

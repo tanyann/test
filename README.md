@@ -1,6 +1,4 @@
-# y
-
-> y
+# Test Project
 
 ## Build Setup
 

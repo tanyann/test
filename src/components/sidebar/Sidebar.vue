@@ -14,7 +14,7 @@
           this.maxPrice
         ],
         categoriesSelected: [],
-        citySelected: '',
+        citySelected: 0,
         categoryCount: [],
       }
     },

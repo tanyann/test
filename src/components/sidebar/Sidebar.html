@@ -5,6 +5,7 @@
     </div>
     <div class="filter-select">
       <select v-model="citySelected">
+        <option value="0">All Cities</option>
         <option :selected="citySelected" v-for="item in city" v-html="item.name" v-bind:value="item.id"></option>
       </select>
     </div>

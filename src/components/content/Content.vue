@@ -34,10 +34,14 @@
 
         let filtered = this.data;
 
-        if (citySelected) {
+        if (citySelected != 0) {
           filtered = filtered.filter(item => {
             return citySelected === item.city;
           });
+        }
+
+        if (citySelected === 0) {
+          filtered = this.data;
         }
 
         if (categoriesSelected.length) {

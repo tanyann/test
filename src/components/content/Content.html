@@ -1,5 +1,6 @@
 <div>
   <div class="cards">
+    <div v-if="!filteredData.length" class="error-text">No matches found</div>
     <div class="card__item" v-for="item in filteredData">
       <div class="card-photo">
         <img v-bind:src="'./static/assets/image-'+item.id+'.png'" alt="" class="card-photo__img">
